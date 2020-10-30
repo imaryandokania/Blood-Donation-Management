@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlood"
+    android:orientation="vertical"
+    tools:context=".StaffActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/blood_front_2" />
+
+            <EditText
+                android:id="@+id/emp_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Employee ID"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight" />
+
+            <EditText
+                android:id="@+id/emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Employee Name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/emp_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/donor_name" />
+
+            <EditText
+                android:id="@+id/emp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/donor_email" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/emp_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/monts_reg"
+                    android:hint="Salary(INR)"
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorLight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/donor_email" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/emp_insert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBloodLight"
+                    android:fontFamily="@font/monts_bold"
+                    android:text="Insert"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/emp_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:fontFamily="@font/monts_bold"
+                    android:text="View Records"
+                    android:textColor="@color/colorBloodLight" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="401dp"
+                android:layout_height="195dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/save_blood" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

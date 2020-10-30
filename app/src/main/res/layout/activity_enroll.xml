@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlood"
+    android:orientation="vertical"
+    tools:context=".EnrollActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/blood_front_2" />
+
+            <EditText
+                android:id="@+id/donor_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="ID"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight" />
+
+            <EditText
+                android:id="@+id/donor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Donor Name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/donor_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/donor_name" />
+
+            <EditText
+                android:id="@+id/donor_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/monts_reg"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/donor_email" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/monts_reg"
+                    android:text="Blood Group"
+                    android:textColor="@color/colorLight"
+                    android:textSize="19sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_bg"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:outlineAmbientShadowColor="@color/colorLight"
+                    android:outlineSpotShadowColor="@color/colorAccent"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/insert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorBloodLight"
+                    android:fontFamily="@font/monts_bold"
+                    android:text="Insert"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="401dp"
+                android:layout_height="195dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/save_blood" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
