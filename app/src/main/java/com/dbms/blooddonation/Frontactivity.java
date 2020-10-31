@@ -33,7 +33,7 @@ public class Frontactivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent needIntent = new Intent(Frontactivity.this, NeedResults.class);
+                Intent needIntent = new Intent(Frontactivity.this, RecipientActivity.class);
                 startActivity(needIntent);
             }
         });

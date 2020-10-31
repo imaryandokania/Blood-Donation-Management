@@ -11,23 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.dbms.blooddonation.InventoryResults"></activity>
-        <activity android:name="com.dbms.blooddonation.BloodInventory" />
-        <activity android:name="com.dbms.blooddonation.SplashActivity">
+        <activity android:name=".RecipientResultsActivity"></activity>
+        <activity android:name=".RecipientActivity" />
+        <activity android:name=".InventoryResults" />
+        <activity android:name=".BloodInventory" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dbms.blooddonation.NeedResults" />
-        <activity android:name="com.dbms.blooddonation.StaffResult" />
-        <activity android:name="com.dbms.blooddonation.StaffActivity" />
-        <activity android:name="com.dbms.blooddonation.EnrollActivity" />
-        <activity android:name="com.dbms.blooddonation.Frontactivity" />
-        <activity android:name="com.dbms.blooddonation.BloodResults" />
-        <activity android:name="com.dbms.blooddonation.MainActivity" />
-        <activity android:name="com.dbms.blooddonation.BloodActivity" />
+        <activity android:name=".NeedResults" />
+        <activity android:name=".StaffResult" />
+        <activity android:name=".StaffActivity" />
+        <activity android:name=".EnrollActivity" />
+        <activity android:name=".Frontactivity" />
+        <activity android:name=".BloodResults" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BloodActivity" />
     </application>
 
 </manifest>
