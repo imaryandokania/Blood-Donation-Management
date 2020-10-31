@@ -1,12 +1,9 @@
-package com.thedipeshpatil.blooddonationsys;
+package com.dbms.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +15,7 @@ import java.util.ArrayList;
 
 import maes.tech.intentanim.CustomIntent;
 
-public class InventoryResults extends AppCompatActivity {
+public class NeedResults extends AppCompatActivity {
 
     DatabaseHelper databaseHelper;
     EditText del_id_text;
@@ -27,23 +24,24 @@ public class InventoryResults extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inventory_results);
+        setContentView(R.layout.activity_need_results);
 
-        ListView listView = findViewById(R.id.listview3);
+        ListView listView = findViewById(R.id.listviewneed);
         databaseHelper = new DatabaseHelper(this);
 
+        del_id_text = findViewById(R.id.need_id);
         ArrayList<String> arrayList = new ArrayList<>();
-        Cursor data = databaseHelper.getAllData2();
+        Cursor data = databaseHelper.getAllData();
 
         if (data.getCount() == 0){
-            Toast.makeText(InventoryResults.this, "Database Empty", Toast.LENGTH_LONG).show();
+            Toast.makeText(NeedResults.this, "Database Empty", Toast.LENGTH_LONG).show();
         } else{
             StringBuffer stringBuffer = new StringBuffer();
             while(data.moveToNext()){
-                arrayList.add("\n" + "BloodBag Number: " + data.getString(0) + "\n" + "Blood Type: " + data.getString(1) + "\n" + "Description: " + data.getString(2) + "\n" + "Quantity: " + data.getString(3) + "\n");
+                arrayList.add("\n" + "ID: " + data.getString(0) + "\n" + "Name: " + data.getString(1) + "\n" + "Email: " + data.getString(2) + "\n" + "Phone: " + data.getString(3) + "\n" + "Blood Group: " + data.getString(4) + "\n");
             }
-            ListAdapter listAdapter2 = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, arrayList);
-            listView.setAdapter(listAdapter2);
+            ListAdapter listAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, arrayList);
+            listView.setAdapter(listAdapter);
         }
 
     }
@@ -51,6 +49,6 @@ public class InventoryResults extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
-        CustomIntent.customType(InventoryResults.this, "left-to-right");
+        CustomIntent.customType(NeedResults.this, "left-to-right");
     }
 }

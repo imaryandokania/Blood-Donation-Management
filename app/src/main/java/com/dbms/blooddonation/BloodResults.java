@@ -1,8 +1,7 @@
-package com.thedipeshpatil.blooddonationsys;
+package com.dbms.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.TextUtils;

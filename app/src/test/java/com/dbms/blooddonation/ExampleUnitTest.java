@@ -1,4 +1,4 @@
-package com.thedipeshpatil.blooddonationsys;
+package com.dbms.blooddonation;
 
 import org.junit.Test;
 

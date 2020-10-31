@@ -1,10 +1,8 @@
-package com.thedipeshpatil.blooddonationsys;
+package com.dbms.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -16,8 +14,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.Random;
-
-import maes.tech.intentanim.CustomIntent;
 
 public class EnrollActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 

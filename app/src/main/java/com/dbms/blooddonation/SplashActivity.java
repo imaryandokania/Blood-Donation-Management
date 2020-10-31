@@ -1,4 +1,4 @@
-package com.thedipeshpatil.blooddonationsys;
+package com.dbms.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,6 @@ import android.os.Bundle;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
-import maes.tech.intentanim.CustomIntent;
 
 public class SplashActivity extends AppCompatActivity {
     private static final long DELAY = 2000;
